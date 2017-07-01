@@ -342,7 +342,8 @@ unsigned long CStdioFileEx::GetCharCount()
 // Notes:  None.
 // Exceptions: None.
 //
-bool CStdioFileEx::GetUnicodeStringFromMultiByteString(char * szMultiByteString, wchar_t* szUnicodeString, short nUnicodeBufferSize, UINT nCodePage)
+bool CStdioFileEx::GetUnicodeStringFromMultiByteString(char * szMultiByteString, wchar_t* szUnicodeString, short nUnicodeBufferSize,
+						       UINT nCodePage)
 {
 	bool  bOK = true;
 	int  nReturn = 0;
@@ -396,7 +397,7 @@ bool CStdioFileEx::GetUnicodeStringFromMultiByteString(char * szMultiByteString,
 // Exceptions: None.
 //
 BOOL CStdioFileEx::GetMultiByteStringFromUnicodeString(wchar_t * szUnicodeString, char* szMultiByteString, 
-													   short nMultiByteBufferSize, UINT nCodePage)
+									short nMultiByteBufferSize, UINT nCodePage)
 {
 	BOOL   bUsedDefChar = FALSE;
 	BOOL   bGotIt = FALSE;
