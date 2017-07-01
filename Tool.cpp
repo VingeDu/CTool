@@ -87,12 +87,12 @@ CString CTool::GetAppPath()
 	_splitpath(path,drive,dir,fname,ext);
 #endif
 	const int nPathLength=256;
-	TCHAR strEzCadPath[nPathLength];
+	TCHAR strPath[nPathLength];
 	
-	_tcscpy(strEzCadPath,drive);
-	_tcscat(strEzCadPath,dir);
+	_tcscpy(strPath,drive);
+	_tcscat(strPath,dir);
 	
-	return strEzCadPath;
+	return strPath;
 }
 
 double CTool::strtof(const CString &str)
